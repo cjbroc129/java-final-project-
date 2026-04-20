@@ -1,1 +1,4 @@
 Final Project Repository Setup Complete
+
+April 19th 2020:
+Today the Game superclass file was created along with the child classes "GuessNumber" and "RockPaperScissors". The main menu filed called "GameMain" was also created to run and test the games out. Methods for all 3 classes as well as the main interface for the menu were written out and tested thoroughly for any bugs, errors, or anything else that felt off. A few small bugs were found and fixed as a result, such as the menu not loading after each game and the computer in rock paper scissors not changing its selection.

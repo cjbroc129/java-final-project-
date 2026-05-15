@@ -48,14 +48,14 @@ Contains the two main methods that each class has, being play() and start() and 
 Both methods just display a message of what is happening when running the game, e.g. start() displays "Loading game..."  
   
    
-- GameMain.java
+- GameMain.java  
 Houses the code for the main hub.  
 Displays a menu that gives the user a selection for the game they want to play or exit the program.  
 Asks the user to select through a numbering system e.g. (1. Guess the Number).    
 The menu and choices are inside a while loop to keep the user able to play until they decide to exit the hub.  
   
    
-- GuessNumber.java
+- GuessNumber.java  
 Houses code for Guess the Number Game.  
 Has start() and play() methods that override the Game.java methods and has class constructor.    
 start() method calls the start method from Game.java.  
@@ -65,7 +65,7 @@ Utilizes if/else if to determine if the guess is correct or too high/low and kee
 Also utilizes try and catch for handle InputMismatchException.  
   
      
-- RockPaperScissors.java
+- RockPaperScissors.java  
 Houses the code for the Rock,Paper,Scissors game.  
 Contains the methods play() and start() and constructor for class.  
 start() simply calls start() from Game.java.  
@@ -77,7 +77,7 @@ Additionally, it keeps track of the rounds played and shows the the round count 
 Also uses try catch(InputMismatchException) to handle incorrect scanner input.  
 
   
-- FinalTriviaGame.java
+- FinalTriviaGame.java  
 Houses code for the Trivia Game.  
 Contains 6 methods(start() play() displayQuestion() getUserAnswer() checkAnswer() runTriviaGame() and constructor for class.  
 start() calls start() from Game.java.  
@@ -93,7 +93,7 @@ After checkAnswer() returns true or false, an if/else statement is used to both 
 Once the for loop has run through the questions and the game is over the total correct/incorrect responses are displayed.  
 
   
-- WordScrambleGame.java
+- WordScrambleGame.java  
 Has start() and play() methods that override the Game.java methods and has class constructor.    
 start() method calls the start method from Game.java.  
 play() contains the code for the main game.  
@@ -106,7 +106,7 @@ Users guess is then checked against the correct word and validated by using .tri
 After each incorrect guess the user is prompted if they want to continue or not with an if/else statement.  
   
   
-- HighLowCardGame.java
+- HighLowCardGame.java  
 Houses code for High-Low Card Game.  
 Has start() and play() methods that override the Game.java methods and has class constructor.    
 start() method calls the start method from Game.java.  

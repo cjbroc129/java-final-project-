@@ -12,7 +12,8 @@ May 11th 2026:
 - Hardest ordeal was trying to figure out how to scramble a word but after much reading in the textbook and trial and error for it to work.
 - Also integrated Trivia Game from previous lab and reordered it slightly to fit into the code better.
 
-May 14th 2026:
+May 15th 2026:
 - Updated hub and older games with exception handling.
 - Further testing for all games input validation.
 - wrote README.
+- final update for submission.

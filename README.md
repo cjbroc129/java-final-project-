@@ -21,26 +21,26 @@ At the start of each round the program will randomly select rock paper or scisso
 Afterwards  the program will display the winner and display the current number of rounds played.    
 The rounds will go on until the user decides to end the session.  
 
-3.  Trivia Game:
+3.  Trivia Game:  
 In this game the user plays a multi-round game of trivia questions.  
 The program will display a question each round and 3 possible answers.  
 After the user enters their answer the program will display if the user's answer was correct or not and will display the correct answer if the users answer was incorrect.  
 At the end of the game the game will display the total number of questions answered correctly and incorrectly.
 
-4.  Word Scramble  
+4.  Word Scramble:    
 In this game the user must unscramble a word.  
 At the start the program will choose from a pre-existing list of words and then randomly shuffle the letters around.  
 Afterwards it will display the scrambled word to the user.  
 The user must then enter what they think the word is.  
 If the user decides they cannot unscramble the word and quit the program will display the word to them.  
 
-5. High-Low Card Game
+5. High-Low Card Game:  
 The objective of this game is to determine whether or not the next card flipped will be a higher or lower value than the current card.
 At the start the game will display the first card.
 Then the user will guess that the next card will be either Higher(H) or Lower(L) than the current one.
 Afterwards, the game will display the next card and if the user guessed correctly.
 
-## Project Structure : 
+## Project Structure: 
   
 - Game.java  
 Houses the main game class that the rest of the games inherit from.  

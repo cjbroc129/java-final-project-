@@ -9,10 +9,12 @@ public class FinalTriviaGame extends Game{
 
 	
 	//methods
+	@Override
 	public void start() {//overrides start from Game
 		super.start();//calls start from Game
 		
 	}
+	@Override
 	public void play() {//overrides play from Game
 		super.play();//calls play from Game
 		Scanner input = new Scanner(System.in);//initializes scanner

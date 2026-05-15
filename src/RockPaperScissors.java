@@ -1,5 +1,4 @@
-import java.util.Scanner;
-import java.util.Random;
+import java.util.*;
 public class RockPaperScissors extends Game{//RockPaperScissors child class that extends the parent class Game
 	
 	
@@ -30,58 +29,74 @@ public class RockPaperScissors extends Game{//RockPaperScissors child class that
 			System.out.println("2. Paper");
 			System.out.println("3. Scissors");
 			System.out.println("4. Quit");
-			int rpsChoice = input.nextInt();//variable to store users choice to compare with the computers.
-		
-			//nested if statement blocks to select winner
-			if (rpsChoice == 1) {//compares users choice of 1 to all possible values of computer to decide winner
-				if(computerRpsChoice == 1) {
-					System.out.println("You opponent also picked Rock. You Draw!");
-				}
-				else if(computerRpsChoice == 2) {
-					System.out.println("Your opponent picked Paper. You lose!");
-				}
-				else if(computerRpsChoice == 3) {
-					System.out.println("Your opponent picked Scissors. You win!");
+			
+			try {
+				int rpsChoice = input.nextInt();//variable to store users choice to compare with the computers.
+				if(rpsChoice <= 3 && rpsChoice >=1) {
+				//nested if statement blocks to select winner
+					if (rpsChoice == 1) {//compares users choice of 1 to all possible values of computer to decide winner
+						if(computerRpsChoice == 1) {
+							System.out.println("Your opponent also picked Rock. You Draw!");
+						}
+						else if(computerRpsChoice == 2) {
+							System.out.println("Your opponent picked Paper. You lose!");
+						}
+						else if(computerRpsChoice == 3) {
+							System.out.println("Your opponent picked Scissors. You Win!");
+						}
+					}
+					
+					else if (rpsChoice == 2) {//compares users choice of 2 to all possible values of computer to decide winner
+						if(computerRpsChoice == 1) {
+							System.out.println("Your opponent picked Rock. You Win!");
+						}
+						else if(computerRpsChoice == 2) {
+							System.out.println("Your opponent also picked Paper. You Draw!");
+						}
+						else if(computerRpsChoice == 3) {
+							System.out.println("Your opponent picked Scissors. You Lose!");
+						}
+					}
+					
+					else if (rpsChoice == 3) {//compares users choice of 2 to all possible values of computer to decide winner
+						if(computerRpsChoice == 1) {
+							System.out.println("Your opponent picked Rock. You Lose!");
+						}
+						else if(computerRpsChoice == 2) {
+							System.out.println("Your opponent picked Paper. You Win!");
+						}
+						else if(computerRpsChoice == 3) {
+							System.out.println("Your opponent also picked Scissors. You Draw!");
+						}
+					}
+					
+					else if (rpsChoice == 4) {// if user enters 4 ends the game and returns to the main menu
+						System.out.println("Returning to main menu...");
+						System.out.println();
+						break;
+					}
+					
+					System.out.println();
+					rounds ++;//increment rounds played after each game and then displays them for the user
+					System.out.println("Current Rounds played: "+rounds);
+					System.out.println("Moving on to the next round...");
+					System.out.println();
 				}
 				
+				else {
+					System.out.println("Please enter a valid option. (1-4)");
+				}
+			}//end of try
+			catch(InputMismatchException e){
+				System.out.println("Error: Please Enter a Number");
+				input.nextLine();
 				
-			}
-			else if (rpsChoice == 2) {//compares users choice of 2 to all possible values of computer to decide winner
-				if(computerRpsChoice == 1) {
-					System.out.println("You opponent picked Rock. You Win!");
-				}
-				else if(computerRpsChoice == 2) {
-					System.out.println("Your opponent also picked Paper. You Draw!");
-				}
-				else if(computerRpsChoice == 3) {
-					System.out.println("Your opponent picked Scissors. You Lose!");
-				}
-			}
-			else if (rpsChoice == 3) {//compares users choice of 2 to all possible values of computer to decide winner
-				if(computerRpsChoice == 1) {
-					System.out.println("You opponent picked Rock. You Lose!");
-				}
-				else if(computerRpsChoice == 2) {
-					System.out.println("Your opponent picked Paper. You Win!");
-				}
-				else if(computerRpsChoice == 3) {
-					System.out.println("Your opponent also picked Scissors. You Draw!");
-				}
-			}
-			else if (rpsChoice == 4) {// if user enters 4 ends the game and returns to the main menu
-				System.out.println("Returning to main menu...");
-				System.out.println();
-				break;
-			}
-			System.out.println();
-			rounds ++;//increment rounds played after each game and then displays them for the user
-			System.out.println("Current Rounds played: "+rounds);
-			System.out.println();
-		}
+			}//end of catch
+		}//end of while
 
 		
 		
 		
-	}
+	}//end of play
 
-}
+}//end of class
